@@ -1,23 +1,16 @@
+import java.util.Random;
+
 public class Main {
 
     public static double numGenerator() {
         return Double.parseDouble(String.format("%1$,.2f",1 + (Math.random() * 10)).replace(",", "."));
     }
 
-    public static String colorGenerator() {
-        int random = (int) (Math.random() * 5);
-        switch (random) {
-            case 1:
-                return "Красный";
-            case 2:
-                return "Желтый";
-            case 3:
-                return "Зеленый";
-            case 4:
-                return "Синий";
-            default:
-                return "Белый";
-        }
+    public static Color colorGenerator() {
+        Random random = new Random();
+        Color[] colors = {Color.BLACK, Color.BLUE, Color.GREEN, Color.PURPLE, Color.YELLOW, Color.RED};
+
+        return colors[random.nextInt(colors.length)];
     }
 
     public static void main(String[] args) {

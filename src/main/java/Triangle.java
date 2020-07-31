@@ -1,9 +1,8 @@
 public class Triangle  extends Figure{
     private double hypotenuse;
     private double height;
-    private String color;
 
-    public Triangle(double hypotenuse, String color, double height) {
+    public Triangle(double hypotenuse, Color color, double height) {
         this.hypotenuse = hypotenuse;
         this.color = color;
         this.height = height;
@@ -18,7 +17,7 @@ public class Triangle  extends Figure{
         return 0.5 * hypotenuse * height;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
