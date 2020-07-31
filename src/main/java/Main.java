@@ -8,7 +8,7 @@ public class Main {
 
     public static Color colorGenerator() {
         Random random = new Random();
-        Color[] colors = {Color.BLACK, Color.BLUE, Color.GREEN, Color.PURPLE, Color.YELLOW, Color.RED};
+        Color[] colors = Color.values();
 
         return colors[random.nextInt(colors.length)];
     }
