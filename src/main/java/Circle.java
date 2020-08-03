@@ -3,7 +3,7 @@ public class Circle extends Figure {
 
     public Circle(double radius, Color color) {
         this.radius = radius;
-        this.color = color;
+        setColor(color);
     }
 
     public String draw() {
@@ -14,11 +14,6 @@ public class Circle extends Figure {
     public double getArea() {
         return Math.PI * Math.pow(radius, 2);
     }
-
-    public Color getColor() {
-        return color;
-    }
-
     public double getRadius() {
         return radius;
     }

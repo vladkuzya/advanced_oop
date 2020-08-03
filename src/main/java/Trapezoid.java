@@ -7,7 +7,7 @@ public class Trapezoid extends Figure {
         this.side1 = side1;
         this.side2 = side2;
         this.height = height;
-        this.color = color;
+        setColor(color);
     }
 
     public String draw() {
@@ -17,10 +17,6 @@ public class Trapezoid extends Figure {
 
     public double getArea() {
         return ((side1 + side2) * height) / 2;
-    }
-
-    public Color getColor() {
-        return color;
     }
 
     public double getHeight() {

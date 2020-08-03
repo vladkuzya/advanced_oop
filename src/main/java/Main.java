@@ -2,11 +2,12 @@ import java.util.Random;
 
 public class Main {
 
-    public static double numGenerator() {
-        return Double.parseDouble(String.format("%1$,.2f",1 + (Math.random() * 10)).replace(",", "."));
+    private static double numGenerator() {
+        Random random = new Random();
+        return (random.nextInt(100) + random.nextInt(100) * 100) / 100.0;
     }
 
-    public static Color colorGenerator() {
+    private static Color colorGenerator() {
         Random random = new Random();
         Color[] colors = Color.values();
 

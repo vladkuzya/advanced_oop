@@ -4,7 +4,7 @@ public class Triangle  extends Figure{
 
     public Triangle(double hypotenuse, Color color, double height) {
         this.hypotenuse = hypotenuse;
-        this.color = color;
+        setColor(color);
         this.height = height;
     }
 
@@ -15,10 +15,6 @@ public class Triangle  extends Figure{
 
     public double getArea() {
         return 0.5 * hypotenuse * height;
-    }
-
-    public Color getColor() {
-        return color;
     }
 
     public double getHypotenuse() {

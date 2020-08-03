@@ -1,8 +1,20 @@
 public abstract class Figure {
-    public Color color;
+    private Color color;
 
-    public abstract String draw ();
-    public abstract double getArea ();
-    public abstract Color getColor ();
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public Color getColor () {
+        return color;
+    }
+
+    public String draw () {
+        return "";
+    };
+    private double getArea () {
+        return 0;
+    };
+
 
 }
